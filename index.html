@@ -1,37 +1,161 @@
 <!DOCTYPE html>
-<html>
+<html >
 <head>
-	<title>python club</title>
-	
-	<link rel="stylesheet" type="text/css" href="styles.css">
-</head>
+  <title></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
 
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Recursive&display=swap" rel="stylesheet">
+
+</head>
 <body>
 
-<nav class="zone green">
+  <header>
+    
+    <div class="tophead">
+      
+          <div class="brandlogo">
+          
+                    𝖈𝖑𝖚𝖇🅿🆈🆃🅷🅾🅽
 
-<ul class="main-nav">
+        </div>
 
-  <li class ="push-right"><a href="index.html">𝖈𝖑𝖚𝖇🅿🆈🆃🅷🅾🅽</a></li>
-  <li><a href="index.html">Home</a></li>
-  <li><a href="projects.html">Projects</a></li>
-  <li><a href="learn.html">Learn</a></li>
-  <li class="push"><a href="about.html">About</a></li>
-
-</ul>
+        <div class="topnav" id="myTopnav">
 
 
-</nav>
+             <a href="https://github.com/harshitpanwar/harshitpanwar.github.io"> Contribute <img src="git.png" height="30px" width="30px"></a>
+        
+        </div>
 
-<div class="learn">
-<a class="butt" href="learn.html">Start Learning</a>
-	
+        <div>
+        
+          <span class="menulines" onclick="openNav()">&#9776;</span>
+        
+        </div>
+
+
+    </div>
+
+
+  </header>
+
+<div class="sidenav" id="mySidenav">
+  
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="index.html"><i class="fas fa-home"> ℌ𝔬𝔪𝔢</i></a>
+    <a href="projects.html"><i class="fas fa-project-diagram"> Projects</i></a>
+    <a href="learn.html"><i class="fas fa-chalkboard-teacher"> Learn</i></a>
+    <a href="about.html"><i class="fas fa-info-circle"> About</i></a>
 
 </div>
 
 
 
+<section class="mainpart ">
+  
+  
 
+        <div>
+           <a class="navigation" onclick="openNav1()" >&#9776;</a>
+        </div>
+
+<div class="navbar" id="myNavbar">
+
+  <a href="javascript:void(0)" class="closebtn1" onclick="closeNav1()">&times;</a>
+    
+      <a href="overview.html" class="current">C++</a>
+      <a href="applicationC.html">Python</a>
+      <a href="">Java</a>
+      <a href="">Android</a>
+    
+
+</div>
+
+<section class="mainpart1">
+	
+  <a href=""><img src="238.jpg" height="70%" width="90%"><a>
+<br><br><br><br><br>
+<a href=""><img src="1720.jpg" height="70%" width="90%">
+</a>
+ 
+
+
+
+
+
+
+
+</section>
+
+<script>
+  
+  var open =false;
+ 
+
+  
+
+function openNav(){
+
+
+  
+  if(open===false)
+  {document.getElementById('mySidenav').style.width="180px";
+       open=true;
+               } 
+               else{
+                
+               }
+
+
+
+}
+
+
+function closeNav(){
+
+  if(open==true )
+{
+  document.getElementById('mySidenav').style.width="0";
+  open = false;
+}
+
+
+}
+  var open1 =false;
+function openNav1(){
+
+  
+  
+  if(open1===false && window.innerWidth<900)
+  {document.getElementById('myNavbar').style.width="180px";
+       open1=true;
+               } 
+               else{
+                
+               }
+
+
+
+
+
+}
+
+function closeNav1(){
+
+  if(open1==true && window.innerWidth<900)
+{
+  document.getElementById('myNavbar').style.width="0";
+  open1 = false;
+}
+
+
+}
+
+
+
+</script>
 </body>
-
 </html>

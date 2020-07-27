@@ -1,27 +1,48 @@
 <!DOCTYPE html>
-<html>
+<html >
 <head>
-	<title>python club</title>
-	
-	<link rel="stylesheet" type="text/css" href="learnstyle.css">
-</head>
+	<title></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
 
+	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="learnstyle.css">
+
+</head>
 <body>
 
-<nav class="zone green">
+	<header>
+		
+		<div class="tophead">
+			
+	  			<div class="brandlogo">
+					
+                    𝖈𝖑𝖚𝖇🅿🆈🆃🅷🅾🅽
 
-<ul class="main-nav">
-
-  <li class ="push-right"><a href="index.html">𝖈𝖑𝖚𝖇🅿🆈🆃🅷🅾🅽</a></li>
-  <li><a href="index.html">Home</a></li>
-  <li><a href="projects.html">Projects</a></li>
-  <li><a href="learn.html">Learn</a></li>
-  <li class="push"><a href="about.html">About</a></li>
-
-</ul>
+				</div>
+				<div>
+					<span class="menulines" onclick="openNav()">&#9776;</span>
+				</div>
 
 
-</nav>
+		</div>
+
+
+	</header>
+
+<div class="sidenav" id="mySidenav">
+	
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		<a href=""><i class="fas fa-home"> Home</i></a>
+		<a href="projects.html"><i class="fas fa-project-diagram"> Projects</i></a>
+		<a href="learn.html"><i class="fas fa-chalkboard-teacher"> Learn</i></a>
+		<a href="about.html"><i class="fas fa-info-circle"> About</i></a>
+
+</div>
+
+<section class="mainpart ">
+	
 
 <ul class="subjects">
 	
@@ -42,7 +63,43 @@
 
 
 
+  
 
+
+
+
+</section>
+
+<script>
+	
+	var open =false;
+function openNav(){
+  
+  if(open===false)
+	{document.getElementById('mySidenav').style.width="250px";
+       open=true;
+               } 
+               else{
+               	document.getElementById('mySidenav').style.width="0";
+	open = false;
+               }
+
+
+
+}
+
+function closeNav(){
+
+	if(open==true)
+{
+	document.getElementById('mySidenav').style.width="0";
+	open = false;
+}
+
+
+}
+
+
+</script>
 </body>
-
 </html>
